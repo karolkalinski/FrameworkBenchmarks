@@ -1,0 +1,26 @@
+{
+  "framework": "vertx-oracle",
+  "tests": [
+    {
+      "default": {
+        "json_url": "/json",
+        "plaintext_url": "/plaintext",
+        "port": 8080,
+        "approach": "Realistic",
+        "classification": "Platform",
+        "database": "Postgres",
+        "framework": "None",
+        "language": "Java",
+        "flavor": "None",
+        "orm": "Raw",
+        "platform": "None",
+        "webserver": "vertx",
+        "os": "Linux",
+        "database_os": "Linux",
+        "display_name": "vertx-oracle",
+        "notes": "",
+        "versus": "vertx-postgres"
+      }
+    }
+  ]
+}
