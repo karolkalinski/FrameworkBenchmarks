@@ -8,7 +8,7 @@
         "port": 8080,
         "approach": "Realistic",
         "classification": "Platform",
-        "database": "Postgres",
+        "database": "Oracle",
         "framework": "None",
         "language": "Java",
         "flavor": "None",
