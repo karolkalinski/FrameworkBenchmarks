@@ -7,11 +7,6 @@
 
 	<repositories>
 		<repository>
-			<id>nexus</id>
-			<name>Nexus</name>
-			<url>repoMirror=https://nexus.hltech.dev/repository/maven-external/</url>
-		</repository>
-		<repository>
 			<id>central</id>
 			<name>Maven Repository Switchboard</name>
 			<layout>default</layout>
@@ -19,6 +14,10 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>oracle-jdbc</id>
+			<url>file://src/main/dependencies</url>
 		</repository>
 	</repositories>
 	<properties>
