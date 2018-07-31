@@ -282,7 +282,9 @@ class Metadata:
                     Metadata.supported_dbs +
                     [('None',
                       'No database was used for these tests, as is the case with Json Serialization and Plaintext'
-                      )]
+                      ),
+                      ('Oracle',
+                      'Oracle db')]
             },
             'approach': {
                 'allowed': [('Realistic', '...'), ('Stripped', '...')]
