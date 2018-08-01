@@ -1,2 +1,3 @@
 CREATE USER benchmarkdbuser IDENTIFIED BY benchmarkdbuser ACCOUNT UNLOCK;
 
+GRANT CREATE SESSION TO benchmarkdbuser WITH ADMIN OPTION;
