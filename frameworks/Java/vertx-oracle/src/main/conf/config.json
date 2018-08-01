@@ -2,6 +2,6 @@
   "user": "benchmarkdbuser",
   "password": "benchmarkdbpass",
   "database": "XE ",
-  "maxPoolSize": 1,
+  "maxPoolSize": 64,
   "url" : "jdbc:oracle:thin:@tfb-database:1521:XE"
 }

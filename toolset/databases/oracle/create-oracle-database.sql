@@ -1,5 +1,3 @@
-CREATE USER benchmarkdbuser IDENTIFIED BY benchmarkdbuser;
+CREATE USER benchmarkdbuser IDENTIFIED BY benchmarkdbpass ACCOUNT UNLOCK;
 
 GRANT CREATE SESSION TO benchmarkdbuser WITH ADMIN OPTION;
-
-ALTER USER benchmarkdbuser IDENTIFIED BY benchmarkdbuser ACCOUNT UNLOCK;
