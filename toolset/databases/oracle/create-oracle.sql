@@ -1,5 +1,3 @@
-
-
 BEGIN
   EXECUTE IMMEDIATE 'DROP TABLE World';
   EXCEPTION
@@ -10,12 +8,12 @@ BEGIN
       RAISE;
     END IF;
 END;
-
-GRANT SELECT, UPDATE ON World to benchmarkdbuser;
-
+/
 CREATE TABLE World AS
   (SELECT id, DBMS_RANDOM.RANDOM() * 10000 + 1 as randomnumber
    FROM (SELECT ROWNUM id FROM dual CONNECT BY ROWNUM <= 10000));
+
+GRANT SELECT, UPDATE ON World to benchmarkdbuser;
 
 ALTER TABLE World ADD CONSTRAINT world_pk PRIMARY KEY (id);
 
@@ -29,7 +27,7 @@ BEGIN
       RAISE;
     END IF;
 END;
-
+/
 CREATE TABLE Fortune (
   id      integer       NOT NULL,
   message varchar(2048) NOT NULL,
