@@ -36,5 +36,18 @@ def test_database(config, database_name):
             db.close()
         except:
             return False
-
+   elif database_name == "oracle":
+        try:
+            db = psycopg2.connect(
+                host=config.database_host,
+                port="5432",
+                user="benchmarkdbuser",
+                password="benchmarkdbpass",
+                database="hello_world")
+            cursor = db.cursor()
+            cursor.execute("SELECT 1")
+            cursor.fetchall()
+            db.close()
+        except:
+            return False
     return True

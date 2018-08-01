@@ -8,7 +8,7 @@ if __name__ == "__main__":
     """
     Initialize database
     """
-    with codecs.open('%s/config/create-postgres.sql' % FWROOT,
+    with codecs.open('%s/config/create-oracle.sql' % FWROOT,
                      'r',
                      encoding='utf-8') as fp:
         sql = fp.read()
