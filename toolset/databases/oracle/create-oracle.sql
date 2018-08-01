@@ -1,4 +1,4 @@
-CREATE USER benchmarkdbuser IDENTIFIED BY benchmarkdbuser ACCOUNT UNLOCK;
+
 
 BEGIN
   EXECUTE IMMEDIATE 'DROP TABLE World';
