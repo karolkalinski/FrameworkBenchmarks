@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.oracle.jdbc</groupId>
-  <artifactId>ojdbc7</artifactId>
-  <version>12.1.0.2</version>
+  <artifactId>ojdbc6</artifactId>
+  <version>11.2.0.4</version>
   <packaging>jar</packaging>  
 
   <!-- Start elements that need to be inserted -->
 
   <!-- Start of fields requiring product specific values -->
-  <description>Oracle JDBC Driver 12.1.0.2 compatible with JDK7 and JDK8</description>
+  <description>Oracle JDBC Driver 11.2.0.4 compatible with JDK6 and JDK7 </description>
   <url>http://www.oracle.com/technetwork/database/enterprise-edition/index-097123.html</url>
   <inceptionYear>1997</inceptionYear>
   <!-- End of fields requiring product specific values -->
@@ -106,36 +106,36 @@
   <!-- End elements that need to be inserted -->
   
    <dependencies>
-   <!-- These files are optional and used for specific functionality -->
+   <!-- declare the dependency to be set as optional -->
    <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>xdb6</artifactId>    
-      <version>12.1.0.2</version>
+      <version>11.2.0.4</version>
   </dependency>
   <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>orai18n</artifactId>   
-      <version>12.1.0.2</version>     
+      <version>11.2.0.4</version>     
   </dependency>
    <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>xmlparserv2</artifactId>    
-      <version>12.1.0.2</version>     
+      <version>11.2.0.4</version>     
   </dependency>   
   <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>oraclepki</artifactId>    
-      <version>12.1.0.2</version>      
+      <version>11.2.0.4</version>      
   </dependency>   
   <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>osdt_cert</artifactId>     
-      <version>12.1.0.2</version>     
+      <version>11.2.0.4</version>     
   </dependency>       
   <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>osdt_core</artifactId>     
-      <version>12.1.0.2</version>    
+      <version>11.2.0.4</version>    
   </dependency>
 </dependencies>
   
