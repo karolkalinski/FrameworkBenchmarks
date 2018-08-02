@@ -3,5 +3,6 @@
   "password": "benchmarkdbpass",
   "database": "XE ",
   "maxPoolSize": 64,
-  "url" : "jdbc:oracle:thin:@tfb-database:1521:XE"
+  "url" : "jdbc:oracle:thin:@tfb-database:1521:XE",
+  "workerPoolSize": 350
 }

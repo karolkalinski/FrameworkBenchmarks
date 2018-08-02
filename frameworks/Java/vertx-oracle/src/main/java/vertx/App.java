@@ -5,6 +5,7 @@ import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Handler;
 import io.vertx.core.MultiMap;
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpHeaders;
 import io.vertx.core.http.HttpServer;
@@ -90,6 +91,9 @@ public class App extends AbstractVerticle implements Handler<HttpServerRequest> 
   @Override
   public void start() throws Exception {
     int port = 8080;
+
+   // Vertx vertx = Vertx.vertx(new VertxOptions().setWorkerPoolSize(700));
+
     server = vertx.createHttpServer(new HttpServerOptions());
     server.requestHandler(App.this).listen(port);
     dateString = HttpHeaders.createOptimized(java.time.format.DateTimeFormatter.RFC_1123_DATE_TIME.format(java.time.ZonedDateTime.now()));
@@ -340,7 +344,7 @@ public class App extends AbstractVerticle implements Handler<HttpServerRequest> 
   public static void main(String[] args) throws Exception {
     JsonObject config = new JsonObject(new String(Files.readAllBytes(new File(args[0]).toPath())));
     int procs = Runtime.getRuntime().availableProcessors();
-    Vertx vertx = Vertx.vertx();
+    Vertx vertx = Vertx.vertx(new VertxOptions().setWorkerPoolSize(700));
     vertx.exceptionHandler(err -> {
       err.printStackTrace();
     });
